@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Dinámico</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        #dynamicForm {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            max-height: 400px;
+            overflow: auto;
+        }
+
+        .input-container {
+            margin-bottom: 10px;
+        }
+
+        .input-container input {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .input-container input.error {
+            border: 2px solid red;
+        }
+
+        button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px 0;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        button:active {
+            background-color: #004085;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario Dinámico</h1>
+    <form id="dynamicForm">
+        <div id="inputContainer"></div>
+        <button type="button" id="addInput">Añadir Campo</button>
+        <button type="button" id="removeInput">Eliminar Campo</button>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script src="scripts.js">
+
+    </script>
+</body>
+</html>
